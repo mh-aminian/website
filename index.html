@@ -1,0 +1,578 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description"
+        content="Portfolio of Mohammad Hossein Aminian – Data Scientist, AI Modeler, and Analyst.">
+
+    <title>Mohammad H. Aminian</title>
+
+    <link rel="icon" href="assets/image/personal/icon.png" type="image/png">
+    <link rel="stylesheet" href="assets/css/bootstrap.min.css">
+    <link rel="stylesheet" href="assets/css/main.css">
+
+    <!-- Optional Open Graph for social media -->
+    <meta property="og:title" content="MH. Aminian's Portfolio">
+    <meta property="og:description" content="Explore projects in data science, AI modeling, dashboards, and research.">
+    <meta property="og:image" content="https://mhaminian.github.io/assets/images/persoanl/og-banner.png">
+    <meta property="og:url" content="https://mhaminian.github.io/">
+    <meta name="twitter:card" content="summary_large_image">
+</head>
+
+<body>
+    <!-- ========================= Toast ========================= -->
+    <div class="custom-toast toast align-items-center border-0 p-0" role="alert" aria-live="assertive"
+        aria-atomic="true" id="liveToast" data-bs-autohide="false">
+        <div class="toast-body d-flex justify-content-between align-items-center m-0">
+            <script src="https://cdn.lordicon.com/bhenfmcm.js"></script>
+            <lord-icon style="width: 90px; height: 90px;" src="https://cdn.lordicon.com/ffcffyir.json" trigger="loop"
+                delay="2000" colors="primary:#121331,secondary:#b26836,tertiary:#ffc738"
+                style="width:250px;height:250px">
+            </lord-icon>
+            <span class="flex-grow-1 text-white">
+                Hey there 👋 <br>
+                Let’s connect or exchange ideas — always happy to chat!
+                <a href="#contact" class="say-hello-link ms-2">Say Hello</a>
+            </span>
+            <button type="button" class="btn-close btn-close-white mx-2" data-bs-dismiss="toast"
+                aria-label="Close"></button>
+        </div>
+    </div>
+
+    <!-- ========================= preloader ========================= -->
+    <div class="preloader">
+        <div class="loader">
+            <div class="ball"></div>
+            <div class="ball"></div>
+            <div class="ball"></div>
+            <span>Loading...</span>
+        </div>
+    </div>
+
+    <!-- ========================= navbar ========================= -->
+    <nav class="navbar navbar-expand-lg fixed-top px-lg-5 shadow-sm" id="navbar" role="navigation">
+        <div class="container-fluid">
+            <!-- Toggle Button -->
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon-custom">
+                    <span class="bar top-bar"></span>
+                    <span class="bar middle-bar"></span>
+                    <span class="bar bottom-bar"></span>
+                </span>
+            </button>
+
+            <!-- Brand Name -->
+            <a class="navbar-brand nav-link fw-bold" href="#header">MH. Aminian</a>
+
+            <!-- Collapsible Links -->
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav mx-auto">
+                    <li class="nav-item"><a href="#about" class="nav-link">About</a></li>
+                    <li class="nav-item"><a href="#journey" class="nav-link">Journey</a></li>
+                    <li class="nav-item"><a href="#skills" class="nav-link">Skills</a></li>
+                    <li class="nav-item"><a href="#publications" class="nav-link">Publications</a></li>
+                    <li class="nav-item"><a href="#projects" class="nav-link">Projects</a></li>
+                    <!-- <li class="nav-item"><a href="#gallery" class="nav-link">Gallery</a></li> -->
+                    <li class="nav-item"><a href="#contact" class="nav-link">Contact</a></li>
+                </ul>
+                <!-- resume button  -->
+                <div class="view-resume-btn-wrapper d-lg-none text-center py-3">
+                    <button type="button" class="navbar-view-resume-btn btn btn-outline-light align-items-center gap-2"
+                        data-bs-toggle="modal" data-bs-target="#resumeModal">
+                        <i class="fas fa-file-lines"></i>
+                        <span>View Resume</span>
+                    </button>
+                </div>
+            </div>
+            <button type="button"
+                class="navbar-view-resume-btn btn btn-outline-light d-none d-lg-inline-flex align-items-center gap-2"
+                data-bs-toggle="modal" data-bs-target="#resumeModal">
+                <i class="fas fa-file-lines"></i>
+                <span>View Resume</span>
+            </button>
+        </div>
+    </nav>
+
+    <!-- ========================= Resume Modal ========================= -->
+    <div class="modal fade" id="resumeModal" tabindex="-1" aria-labelledby="resumeModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-xl modal-dialog-centered">
+            <div class="modal-content p-0">
+                <div class="modal-header border-0 py-2 d-flex align-items-center justify-content-between">
+                    <h5 class="modal-title text-white" id="resumeModalLabel">My Resume</h5>
+                    <div class="d-flex align-items-center gap-2">
+                        <a href="assets/pdf/Mohammad-Hossein-Aminian-Resume.pdf#toolbar=0"
+                            class="modal-download-btn btn btn-outline-light" download>
+                            <i class="fas fa-download me-2"></i>Download
+                        </a>
+                        <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal"
+                            aria-label="Close"></button>
+                    </div>
+                </div>
+                <div class="modal-body p-0">
+                    <iframe src="assets/pdf/Mohammad-Hossein-Aminian-Resume.pdf" style="width: 100%; height: 70vh;"
+                        title="Resume PDF" aria-label="Resume Viewer" frameborder="0"></iframe>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- ========================= Header ========================= -->
+    <header class="header" id="header">
+        <div class="container header-container text-center">
+            <div class="row justify-content-center">
+                <div class="col-12">
+                    <a href="https://example.github.io">
+                        <img src="assets/image/personal/header.jpg" class="img-fluid header-img" alt="Mohammad">
+                    </a>
+                </div>
+                <div class="col-12 mt-1">
+                    <h1 class="header-name">Mohammad H. Aminian</h1>
+                    <h3 class="header-jobtitle">Data Scientist & AI Researcher <br> <em>at the intersection of data,
+                            insight, and imagination</em></h3>
+                </div>
+                <div class="col-12 mt-2">
+                    <!-- View My Work (GitHub Pages site) -->
+                    <a href="portfolio.html" target="_blank"
+                        class="header-btn-portfolio btn btn-outline-light d-inline-flex align-items-center me-1">
+                        <i class="fas fa-folder-open"></i>
+                        <span class="ms-2">My Portfolio</span>
+                    </a>
+                    <!-- GitHub Profile -->
+                    <a href="https://github.com/mh-aminian" target="_blank"
+                        class="header-btn-github btn btn-outline-light d-inline-flex align-items-center ms-1">
+                        <i class="fab fa-github"></i>
+                        <span class="ms-2"> GitHub</span>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- ========================= About ========================= -->
+    <section class="about" id="about">
+        <div class="container text-center">
+            <h2 class="section-title">
+                <i class="fas fa-rocket me-2"></i> About Me
+            </h2>
+            <hr class="section-underline" />
+            <p class="about-text">
+                I'm a computer engineering graduate with a passion for data, discovery, and solving meaningful problems.
+                My work blends research and hands-on development, from building predictive models to analyzing features
+                and designing smarter systems. I love making sense of complex information and turning it into clear,
+                practical insight — whether through machine learning, clean design, or thoughtful data storytelling.
+                Above all, I'm driven by curiosity, creativity, and the idea that great solutions come from both
+                structure and imagination.<br>
+
+                Currently, I’m deeply exploring: <span class="highlight">Generative AI, LLMs, NLP, Deep Generative
+                    Training</span>
+            </p>
+        </div>
+    </section>
+
+    <!-- ========================= Journey ========================= -->
+    <section class="journey" id="journey">
+        <div class="container text-center">
+            <h2 class="section-title">
+                <i class="fas fa-route me-2"></i> My Journey
+            </h2>
+            <hr class="section-underline" />
+            <div class="timeline">
+                <!-- Timeline item (empty) - left -->
+                <!-- <div class="timeline-item left">
+                    <div class="timeline-content glass-bg d-flex align-items-center gap-3">
+                        <i class="fas fa-chart-line timeline-logo-icon"></i>
+                        <div class="timeline-text">
+                            <h3 class="journey-title"><strong> Engineering</strong></h3>
+                            <div class="place-title">Mahallat University of Higher Education, Mahallat, Iran</div>
+                            <p class="timeline-date">Sep 2019 - Sep 2024</p>
+                        </div>
+                    </div>
+                </div> -->
+
+                <!-- Timeline item (RA) - right -->
+                <div class="timeline-item left">
+                    <div class="timeline-content glass-bg d-flex align-items-center gap-3">
+                        <i class="fas fa-microscope timeline-logo-icon"></i>
+                        <div class="timeline-text">
+                            <h3 class="journey-title"><strong>Graduate Research Assistant</strong></h3>
+                            <div class="place-title">Mahallat University of Higher Education, Mahallat, Iran</div>
+                            <p class="timeline-date">Oct 2024 - Present</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Timeline item (TA) - left -->
+                <div class="timeline-item right">
+                    <div class="timeline-content glass-bg d-flex align-items-center gap-3">
+                        <i class="fas fa-chalkboard-teacher timeline-logo-icon"></i>
+                        <div class="timeline-text">
+                            <h3 class="journey-title"><strong>Teaching Assistant</strong></h3>
+                            <div class="place-title">Mahallat University of Higher Education, Mahallat, Iran</div>
+                            <p class="timeline-date">Feb 2024 - Jun 2024</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Timeline item (TA) - left -->
+                <div class="timeline-item left">
+                    <div class="timeline-content glass-bg d-flex align-items-center gap-3">
+                        <i class="fas fa-laptop-code timeline-logo-icon"></i>
+                        <div class="timeline-text">
+                            <h3 class="journey-title"><strong>Data Science Training</strong></h3>
+                            <div class="place-title">Tose'e Higher Education Institue, Theran, Iran</div>
+                            <p class="timeline-date">Jan 2022 - Mar 2023</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Timeline item (B.Sc.) - right -->
+                <div class="timeline-item right">
+                    <div class="timeline-content glass-bg d-flex align-items-center gap-3">
+                        <i class="fas fa-graduation-cap timeline-logo-icon"></i>
+                        <div class="timeline-text">
+                            <h3 class="degree-type">Bachelor of Science</h3>
+                            <h3 class="journey-title"><strong>Computer Engineering</strong></h3>
+                            <div class="place-title">Mahallat University of Higher Education, Mahallat, Iran</div>
+                            <p class="timeline-date">Sep 2019 - Sep 2024</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ========================= Skills ========================= -->
+    <section class="skills-section" id="skills">
+        <div class="container text-center">
+            <h2 class="section-title">
+                <i class="fas fa-cogs me-2"></i> Technical Skills
+            </h2>
+            <hr class="section-underline" />
+            <div class="row g-4 mb-4">
+                <div class="col-md-6 col-lg-4 d-flex">
+                    <div class="glass-card skill-card text-center p-4 w-100 d-flex flex-column">
+                        <div class="icon mb-2"><i class="fas fa-brain fa-2x"></i></div>
+                        <h5 class="fw-bold mb-2">Data Science & AI</h5>
+                        <p class="text-muted mb-3">Transforming data into insights and intelligent systems using
+                            advanced ML, DL, and AI techniques. <br>
+                            Python, scikit-learn, TensorFlow, XGBoost, SHAP, statsmodels, NLP, LLMs, Time Series, GenAI
+                        </p>
+                        <div class="d-flex justify-content-center flex-wrap gap-4 mt-2">
+                            <img src="assets/image/logo/python.png" alt="Python" class="tech-icon" title="Python">
+                            <img src="assets/image/logo/tensorflow.png" alt="TensorFlow" class="tech-icon" title="TensorFlow">
+                            <img src="assets/image/logo/numpy.png" alt="Numpy" class="tech-icon" title="Numpy">
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-4 d-flex">
+                    <div class="glass-card skill-card text-center p-4 w-100 d-flex flex-column">
+                        <div class="icon mb-2"><i class="fas fa-chart-line fa-2x"></i></div>
+                        <h5 class="fw-bold mb-2">Analytics & Visualization</h5>
+                        <p class="text-muted mb-3">Crafting data stories and uncovering trends through dashboards and
+                            statistical insight. <br>
+                            Power BI, Tableau, Excel, pandas, NumPy, Matplotlib, Seaborn, Plotly</p>
+                        <div class="d-flex justify-content-center flex-wrap gap-4 mt-2">
+                            <img src="assets/image/logo/powerbi.png" alt="PowerBI" class="tech-icon" title="PowerBI">
+                            <img src="assets/image/logo/tableau.png" alt="Tableau" class="tech-icon" title="Tableau">
+                            <img src="assets/image/logo/excel.png" alt="Excel" class="tech-icon" title="Excel">
+                        </div>
+
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-4 d-flex">
+                    <div class="glass-card skill-card text-center p-4 w-100 d-flex flex-column">
+                        <div class="icon mb-2"><i class="fas fa-project-diagram fa-2x"></i></div>
+                        <h5 class="fw-bold mb-2">Predictive Intelligence</h5>
+                        <p class="text-muted mb-3">Designing, training, and optimizing predictive models for real-world
+                            decision-making. <br>
+                            SciPy, statsmodels, Hyperparameter Tuning, Feature Engineering, Evaluation Metrics
+                        </p>
+                        <div class="d-flex justify-content-center flex-wrap gap-4 mt-2">
+                            <img src="assets/image/logo/AI.png" alt="Intelligence" class="tech-icon" title="Intelligence">
+                            <img src="assets/image/logo/evaluation.png" alt="Evaluation" class="tech-icon" title="Evaluation">
+                            <img src="assets/image/logo/tune.png" alt="Features" class="tech-icon" title="Features">
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row g-4">
+                <div class="col-md-6 col-lg-4 d-flex">
+                    <div class="glass-card skill-card text-center p-4 w-100 d-flex flex-column">
+                        <div class="icon mb-2"><i class="fas fa-database fa-2x"></i></div>
+                        <h5 class="fw-bold mb-2">Data Engineering & SQL</h5>
+                        <p class="text-muted mb-3">Building data pipelines and transforming raw data into structured
+                            knowledge. <br>
+                            SQL Server, MySQL, ETL Design, Data Cleaning, Joins & CTEs
+                        </p>
+                        <div class="d-flex justify-content-center flex-wrap gap-4 mt-2">
+                            <img src="assets/image/logo/sqlserver.png" alt="SQL Server" class="tech-icon" title="SQL Server">
+                            <img src="assets/image/logo/mysql.png" alt="MySQL" class="tech-icon" title="MySQL">
+                            <img src="assets/image/logo/database.png" alt="Database" class="tech-icon" title="Database">
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-4 d-flex">
+                    <div class="glass-card skill-card text-center p-4 w-100 d-flex flex-column">
+                        <div class="icon mb-2"><i class="fas fa-code fa-2x"></i></div>
+                        <h5 class="fw-bold mb-2">Programming & Software</h5>
+                        <p class="text-muted mb-3">Robust programming foundation across multiple languages and
+                            frameworks. <br>
+                            Python (Adv.), R (Inter.), Java (Inter.), Git & GitHub, GitHub Actions</p>
+                        <div class="d-flex justify-content-center flex-wrap gap-4 mt-2">
+                            <img src="assets/image/logo/python.png" alt="Python" class="tech-icon" title="Python">
+                            <img src="assets/image/logo/r.png" alt="R" class="tech-icon" title="R">
+                            <img src="assets/image/logo/java.png" alt="Java" class="tech-icon" title="Java">
+                        </div>
+
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-4 d-flex">
+                    <div class="glass-card skill-card text-center p-4 w-100 d-flex flex-column">
+                        <div class="icon mb-2"><i class="fas fa-globe fa-2x"></i></div>
+                        <h5 class="fw-bold mb-2">Web & Deployment</h5>
+                        <p class="text-muted mb-3">Bridging the gap between data models and user interaction through web
+                            tools. <br>
+                            Django, DRF, HTML/CSS, Bootstrap 5, Streamlit (optional if used), REST APIs
+                        </p>
+                        <div class="d-flex justify-content-center flex-wrap gap-4 mt-2">
+                            <img src="assets/image/logo/django.png" alt="Django" class="tech-icon" title="Django">
+                            <img src="assets/image/logo/bootstrap.png" alt="Bootstrap" class="tech-icon" title="Bootstrap">
+                            <img src="assets/image/logo/html5.png" alt="HTML" class="tech-icon" title="HTML">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ========================= Publications ========================= -->
+    <section class="publication-section" id="publications">
+        <div class="container text-center">
+            <!-- Title -->
+            <h2 class="section-title">
+                <i class="fas fa-book-open me-2"></i> Publications
+            </h2>
+            <hr class="section-underline" />
+            <div class="row g-4">
+                <div class="col-12 col-md-12 col-lg-6">
+                    <div class="publication-card glass-bg h-100 d-flex flex-column">
+                        <span class="position-absolute top-0 start-10 translate-middle badge rounded-pill bg-secondary">
+                            Under Review
+                        </span>
+                        <div class="publication-card-body">
+                            <h5 class="publication-card-title">Metaheuristic-Trained Neural Networks for Predictive
+                                Modeling of EDM on Inconel 718: A Small-Data Approach Using GA and GWO </h5>
+                            <p class="publication-card-subtitle">International Journal for Simulation and
+                                Multidisciplinary Design Optimization (IJSMDO)</p>
+                            <p class="publication-card-text flex-grow-1">
+                                A hybrid modeling approach integrating Genetic Algorithm (GA) and Grey Wolf Optimizer
+                                (GWO) to train artificial neural networks for predicting machining performance in EDM of
+                                Inconel 718. This method is designed for high accuracy even on small datasets.
+                            </p>
+                        </div>
+                        <a href="https://www.ijsmdo.org/component/content/article/8-news/262-call-for-papers-for-a-special-issue-on-ai-driven-simulation-and-neural-optimization-for-smart-systems-and-healthcare-applications"
+                            target="_blank" class="publication-icon-link mt-auto" aria-label="View Paper">
+                            <i class="fas fa-file-alt publication-icon"></i>
+                        </a>
+                    </div>
+                </div>
+                <div class="col-12 col-md-12 col-lg-6">
+                    <div class="publication-card glass-bg h-100 d-flex flex-column">
+                        <span class="position-absolute top-0 start-10 translate-middle badge rounded-pill bg-danger">
+                            In Preparation
+                        </span>
+                        <div class="publication-card-body">
+                            <h5 class="publication-card-title">Modular Intrusion Detection through Class-Specific
+                                Feature Selection: Core–Auxiliary Subsets via Multi-Objective Pareto Optimization</h5>
+                            <p class="publication-card-subtitle"> ----- </p>
+                            <p class="publication-card-text flex-grow-1">
+                                Designed and implemented a class-specific feature selection framework using NSGA-II with
+                                Random Forest and XGBoost objectives to build a modular, efficient, and interpretable
+                                intrusion detection system.
+                            </p>
+                        </div>
+                        <a href="#" target="_blank" class="publication-icon-link mt-auto" aria-label="View Paper">
+                            <i class="fas fa-file-alt publication-icon"></i>
+                        </a>
+                    </div>
+                </div>
+                <div class="col-12 col-md-12 col-lg-6">
+                    <div class="publication-card glass-bg h-100 d-flex flex-column">
+                        <span class="position-absolute top-0 start-10 translate-middle badge rounded-pill bg-secondary">
+                            Under Review
+                        </span>
+                        <div class="publication-card-body">
+                            <h5 class="publication-card-title">Overcoming Data Limitations Using ANN with GA and GWO: A
+                                Study on EDM of Inconel 718</h5>
+                            <p class="publication-card-subtitle">15th International Conference on Computer and Knowledge
+                                Engineering (ICCKE 2025)</p>
+                            <p class="publication-card-text flex-grow-1">
+                                This study presents an ANN model trained with Genetic Algorithm (GA) and Grey Wolf
+                                Optimizer (GWO) to address limited experimental data in predicting EDM outcomes for
+                                Inconel 718. The approach enhances predictive accuracy and robustness in small-sample
+                                scenarios.
+                            </p>
+                        </div>
+                        <a href="https://iccke.um.ac.ir/2025/en" target="_blank" class="publication-icon-link mt-auto"
+                            aria-label="View Paper">
+                            <i class="fas fa-file-alt publication-icon"></i>
+                        </a>
+                    </div>
+                </div>
+                <div class="col-12 col-md-12 col-lg-6">
+                    <div class="publication-card glass-bg h-100 d-flex flex-column">
+                        <span class="position-absolute top-0 start-10 translate-middle badge rounded-pill bg-danger">
+                            In Preparation
+                        </span>
+                        <div class="publication-card-body">
+                            <h5 class="publication-card-title">Feature-Driven Prediction and Sensitivity Analysis of
+                                Material Hardness Using XGBoost and Linear Models</h5>
+                            <p class="publication-card-subtitle"> ----- </p>
+                            <p class="publication-card-text flex-grow-1">
+                                Developed a two-stage modeling approach using SHAP-based feature selection and
+                                regression to predict material hardness, followed by manual sensitivity analysis for
+                                interpretability.
+                            </p>
+                        </div>
+                        <a href="#" target="_blank" class="publication-icon-link mt-auto" aria-label="View Paper">
+                            <i class="fas fa-file-alt publication-icon"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ========================= Projects ========================= -->
+    <section class="projects-section" id="projects">
+        <div class="container text-center">
+            <h2 class="section-title">
+                <i class="fas fa-code-branch me-2"></i> Projects
+            </h2>
+            <hr class="section-underline" />
+            <div class="row g-4 justify-content-center">
+                <!-- Project 1 -->
+                <div class="col-12 col-md-6 col-lg-4">
+                    <div class="project-card glass-bg h-100 d-flex flex-column">
+                        <img src="assets/image/projects/09.jpg" alt="Project 1" class="project-img mb-3" />
+                        <div class="project-card-body flex-grow-1">
+                            <h5 class="project-card-title">Predicting Baseball Hitters Salaries</h5>
+                            <p class="project-card-text">
+                                This project explores a rich Baseball League dataset to predict player salaries using a
+                                variety of statistical and machine learning models.
+                            </p>
+                        </div>
+                        <a href="https://github.com/mh-aminian/data-science-portfolio/tree/main/hitters_salary_prediction"
+                            class="project-link mt-auto" target="_blank" aria-label="View Project">
+                            <i class="fas fa-external-link-alt"></i>
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Churn Dashboard -->
+                <div class="col-12 col-md-6 col-lg-4">
+                    <div class="project-card glass-bg h-100 d-flex flex-column">
+                        <img src="assets/image/projects/06.jpeg" alt="Project 2" class="project-img mb-3" />
+                        <div class="project-card-body flex-grow-1">
+                            <h5 class="project-card-title">Customer Churn Analysis</h5>
+                            <p class="project-card-text">
+                                End-to-end project including SQL data processing, Power BI dashboard design, and churn
+                                prediction with Python.
+                            </p>
+                        </div>
+                        <a href="https://github.com/mh-aminian/data-analytics-portfolio/tree/main/PowerBI/customer-churn-dashboard"
+                            class="project-link mt-auto" target="_blank" aria-label="View Project">
+                            <i class="fas fa-external-link-alt"></i>
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Data Warehouse -->
+                <div class="col-12 col-md-6 col-lg-4">
+                    <div class="project-card glass-bg h-100 d-flex flex-column">
+                        <img src="assets/image/projects/Data-Warehouse.png" alt="Project 3" class="project-img mb-3" />
+                        <div class="project-card-body flex-grow-1">
+                            <h5 class="project-card-title">Data Warehouse Project</h5>
+                            <p class="project-card-text">
+                                This project demonstrates a comprehensive data warehousing and analytics
+                                solution, from building a data warehouse to generating actionable
+                                insights.
+                            </p>
+                        </div>
+                        <a href="https://github.com/mh-aminian/sql_data_warehouse_project/tree/main"
+                            class="project-link mt-auto" target="_blank" aria-label="View Project">
+                            <i class="fas fa-external-link-alt"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="row mt-4">
+                <div class="col text-center">
+                    <a href="portfolio.html" target="_blank" class="view-all-projects-link">
+                        View All Projects <i class="fas fa-arrow-right"></i>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ========================= Contact ========================= -->
+    <section class="contact" id="contact">
+        <div class="container text-center py-5">
+            <h2 class="section-title mb-3">
+                <i class="fas fa-paper-plane me-2"></i> Get In Touch
+            </h2>
+            <hr class="section-underline" />
+            <p class="lead mb-4">
+                I'm currently open to new opportunities and collaborations. Feel free to reach out!
+            </p>
+            <div class="contact-links d-flex justify-content-center gap-5 flex-wrap">
+                <a id="copyEmailBtn" class="contact-link" aria-label="Copy Email" data-bs-toggle="popover"
+                    data-bs-trigger="manual" data-bs-placement="top" data-bs-content="Email copied to clipboard!"
+                    style="cursor: pointer;">
+                    <i class="fas fa-envelope"></i>
+                </a>
+                <a href="https://github.com/mh-aminian" target="_blank" rel="noopener" class="contact-link"
+                    title="GitHub" aria-label="GitHub">
+                    <i class="fab fa-github"></i>
+                </a>
+                <a href="https://linkedin.com/in/mh-aminian" target="_blank" rel="noopener" class="contact-link"
+                    title="LinkedIn" aria-label="LinkedIn">
+                    <i class="fab fa-linkedin"></i>
+                </a>
+                <a href="https://t.me/mh-aminian" target="_blank" rel="noopener" class="contact-link" title="Telegram"
+                    aria-label="Telegram">
+                    <i class="fab fa-telegram"></i>
+                </a>
+                <a href="https://mhaminian.github.io" target="_blank" rel="noopener" class="contact-link" title="Website"
+                    aria-label="Website">
+                    <i class="fas fa-globe"></i>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- ========================= Footer ========================= -->
+    <footer class="footer" id="footer">
+        <div class="container footer-text mx-auto px-6 py-2">
+            <p style="text-align: center; margin-bottom: 0;">
+                &copy;
+                <script>document.write(new Date().getFullYear())</script>
+                Mohammad Hossein Aminian. All Rights Reserved.
+            </p>
+        </div>
+    </footer>
+
+
+    <!-- ========================= Scripts ========================= -->
+    <script src="assets/js/jquery-3.6.0.min.js"></script>
+    <script src="assets/js/bootstrap.bundle.min.js"></script>
+    <script src="assets/js/all.js"></script>
+    <script src="assets/js/custom.js"></script>
+</body>
+
+</html>

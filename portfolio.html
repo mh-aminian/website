@@ -1,0 +1,706 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Portfolio of Mohammad Hossein Aminian – Data Scientist, AI Modeler, and Analyst.">
+
+    <title>MH. Aminian's Portfolio</title>
+
+    <link rel="icon" href="assets/image/personal/icon.png" type="image/png">
+    <link rel="stylesheet" href="assets/css/bootstrap.min.css">
+    <link rel="stylesheet" href="assets/css/main.css">
+
+    <!-- Optional Open Graph for social media -->
+    <meta property="og:title" content="MH. Aminian's Portfolio">
+    <meta property="og:description" content="Explore projects in data science, AI modeling, dashboards, and research.">
+    <meta property="og:image" content="https://mhaminian.github.io/assets/images/persoanl/og-banner.png">
+    <meta property="og:url" content="https://mhaminian.github.io/">
+    <meta name="twitter:card" content="summary_large_image">
+</head>
+
+<body>
+
+    <!-- ========================= Toast ========================= -->
+    <div class="custom-toast toast align-items-center border-0 p-1" role="alert" aria-live="assertive"
+        aria-atomic="true" id="liveToast" data-bs-autohide="false">
+        <div class="toast-body d-flex justify-content-between align-items-center m-0">
+            <script src="https://cdn.lordicon.com/bhenfmcm.js"></script>
+            <lord-icon style="width: 90px; height: 90px;" src="https://cdn.lordicon.com/ffcffyir.json" trigger="loop"
+                delay="2000" colors="primary:#121331,secondary:#b26836,tertiary:#ffc738"
+                style="width:250px;height:250px">
+            </lord-icon>
+            <span class="flex-grow-1 text-white">
+                Hey there 👋 <br>
+                Let’s connect or exchange ideas — always happy to chat!
+                <a href="#contact" target="_blank" class="say-hello-link ms-2">Say Hello</a>
+            </span>
+            <button type="button" class="btn-close btn-close-white mx-2" data-bs-dismiss="toast"
+                aria-label="Close"></button>
+        </div>
+    </div>
+
+    <!-- ========================= preloader ========================= -->
+    <div class="preloader">
+        <div class="loader">
+            <div class="ball"></div>
+            <div class="ball"></div>
+            <div class="ball"></div>
+            <span>Loading...</span>
+        </div>
+    </div>
+
+    <!-- ========================= header ========================= -->
+    <header class="port-header text-center" id="port-header">
+        <div class="container port-header-container text-center">
+            <div class="row d-flex justify-content-center">
+                <div class="col-12 mt-1 text-center">
+                    <h1 class="port-header-name mx-auto">Mohammad H. Aminian</h1>
+                    <div class="typing-text">
+                        <span id="typed"></span>
+                    </div>
+                </div>
+                <div class="col-12 mt-2">
+                    <!-- View My Work (GitHub Pages site) -->
+                    <a href="index.html" target="_blank"
+                        class="port-header-btn-portfolio btn btn-outline-light d-inline-flex align-items-center me-1">
+                        <i class="fas fa-globe"></i>
+                        <span class="ms-1">Website</span>
+                    </a>
+                    <!-- GitHub Profile -->
+                    <a href="https://github.com/mh-aminian" target="_blank"
+                        class="port-header-btn-github btn btn-outline-light d-inline-flex align-items-center ms-1">
+                        <i class="fab fa-github"></i>
+                        <span class="ms-1"> GitHub</span>
+                    </a>
+                </div>
+            </div>
+        </div>
+        <div class="row mouse-row">
+            <div class="col-12 mx-auto">
+                <a href="#portfolio" class="mousey mx-auto mb-2">
+                    <div class="scroller"></div>
+                </a>
+            </div>
+        </div>
+    </header>
+
+    <!-- ========================= portfolio ========================= -->
+    <section class="portfolio" id="portfolio">
+        <div class="container portfolio-wrapper text-center">
+            <h2 class="section-title">
+                <i class="fas fa-code-branch me-2"></i> Portfolio
+            </h2>
+            <hr class="section-underline" />
+
+            <!-- Top-level category buttons -->
+            <div class="row g-4 justify-content-start">
+                <div class="col-6 col-md-3 col-lg-2 text-center">
+                    <a class="portfolio-collapse-btn port-collapse-btn" data-bs-toggle="collapse" href="#DataScience"
+                        role="button" aria-expanded="true" aria-controls="DataScience">
+                        Data Science
+                    </a>
+                </div>
+                <div class="col-6 col-md-3 col-lg-2 text-center">
+                    <a class="portfolio-collapse-btn port-collapse-btn" data-bs-toggle="collapse"
+                        href="#BusinessIntelligence" role="button" aria-expanded="false"
+                        aria-controls="BusinessIntelligence">
+                        Data Studio
+                    </a>
+                </div>
+                <div class="col-6 col-md-3 col-lg-2 text-center">
+                    <a class="portfolio-collapse-btn port-collapse-btn" data-bs-toggle="collapse" href="#Research"
+                        role="button" aria-expanded="false" aria-controls="Research">
+                        Research
+                    </a>
+                </div>
+                <div class="col-6 col-md-3 col-lg-2 text-center">
+                    <a class="portfolio-collapse-btn port-collapse-btn" data-bs-toggle="collapse" href="#AIModels"
+                        role="button" aria-expanded="false" aria-controls="AIModels">
+                        AI & Models
+                    </a>
+                </div>
+            </div>
+
+            <!-- Category content collapses -->
+            <div class="row">
+                <div class="col-12">
+
+                    <!-- Business Intelligence & Data Engineering -->
+                    <div class="collapse multi-collapse" id="BusinessIntelligence">
+                        <!-- Buttons -->
+                        <div class="row d-flex justify-content-start">
+                            <div class="col-6 col-md-3 col-lg-2 text-center">
+                                <a class="portfolio-collapse-btn2 port-collapse-btn" data-bs-toggle="collapse"
+                                    href="#PowerBI" role="button" aria-expanded="false" aria-controls="PowerBI">
+                                    Power BI
+                                </a>
+                            </div>
+                            <div class="col-6 col-md-3 col-lg-2 text-center">
+                                <a class="portfolio-collapse-btn2 port-collapse-btn" data-bs-toggle="collapse"
+                                    href="#Tableau" role="button" aria-expanded="false" aria-controls="Tableau">
+                                    Tableau
+                                </a>
+                            </div>
+                            <div class="col-6 col-md-3 col-lg-2 text-center">
+                                <a class="portfolio-collapse-btn2 port-collapse-btn" data-bs-toggle="collapse"
+                                    href="#DataFoundations" role="button" aria-expanded="false"
+                                    aria-controls="DataFoundations">
+                                    Data Core
+                                </a>
+                            </div>
+                        </div>
+
+                        <!-- Power BI Projects -->
+                        <div class="collapse multi-collapse show" id="PowerBI">
+                            <div class="row">
+                                <!-- Churn Project Card -->
+                                <div class="col-12 col-md-4 col-lg-4 my-2">
+                                    <div class="project-card glass-bg h-100 d-flex flex-column">
+                                        <img src="https://raw.githubusercontent.com/mh-aminian/data-analytics-portfolio/main/PowerBI/customer-churn-dashboard/image/churn_analysis_summary.PNG"
+                                            alt="Customer Churn Dashboard" class="project-image" />
+                                        <div class="project-card-body flex-grow-1">
+                                            <h5 class="project-card-title">Customer Churn Dashboard</h5>
+                                            <p class="project-card-text">
+                                                End-to-end project including SQL data processing, Power BI dashboard
+                                                design, and churn prediction with Python.
+                                            </p>
+                                        </div>
+                                        <a href="https://github.com/mh-aminian/data-analytics-portfolio/tree/main/PowerBI/customer-churn-dashboard"
+                                            class="project-link mt-auto" target="_blank" aria-label="View Project">
+                                            <i class="fas fa-external-link-alt"></i>
+                                        </a>
+                                    </div>
+                                </div>
+
+                                <!-- Employee Attend. Project Card -->
+                                <div class="col-12 col-md-4 col-lg-4 my-2">
+                                    <div class="project-card glass-bg h-100 d-flex flex-column">
+                                        <img src="https://raw.githubusercontent.com/mh-aminian/data-analytics-portfolio/main/PowerBI/employee-attendance-dashboard/image/employee_dashboard.PNG"
+                                            alt="Employee Attendance Dashboard" class="project-image" />
+                                        <div class="project-card-body flex-grow-1">
+                                            <h5 class="project-card-title">Employee Attendance Dashboard</h5>
+                                            <p class="project-card-text">
+                                                An interactive Power BI dashboard that visualizes employee attendance
+                                                and key metrics across different months with a dynamic, SVG-enhanced
+                                                layout.
+                                            </p>
+                                        </div>
+                                        <a href="https://github.com/mh-aminian/data-analytics-portfolio/tree/main/PowerBI/employee-attendance-dashboard"
+                                            class="project-link mt-auto" target="_blank" aria-label="View Project">
+                                            <i class="fas fa-external-link-alt"></i>
+                                        </a>
+                                    </div>
+                                </div>
+
+                                <!-- Heart Disease Project Card -->
+                                <div class="col-12 col-md-4 col-lg-4 my-2">
+                                    <div class="project-card glass-bg h-100 d-flex flex-column">
+                                        <img src="https://raw.githubusercontent.com/mh-aminian/data-analytics-portfolio/main/PowerBI/heart-disease-dashboard/image/heart_disease.PNG"
+                                            alt="Heart Disease Analysis Dashboard" class="project-image" />
+                                        <div class="project-card-body flex-grow-1">
+                                            <h5 class="project-card-title">Heart Disease Analysis Dashboard</h5>
+                                            <p class="project-card-text">
+                                                A clean and focused Power BI dashboard analyzing heart disease-related
+                                                patterns based on age, gender, and critical health indicators. This
+                                                project combines basic interactivity with visual storytelling to explore
+                                                survival trends and the influence of health conditions.
+                                            </p>
+                                        </div>
+                                        <a href="https://github.com/mh-aminian/data-analytics-portfolio/tree/main/PowerBI/heart-disease-dashboard"
+                                            class="project-link mt-auto" target="_blank" aria-label="View Project">
+                                            <i class="fas fa-external-link-alt"></i>
+                                        </a>
+                                    </div>
+                                </div>
+
+                                <!-- HR Project Card -->
+                                <div class="col-12 col-md-4 col-lg-4 my-2">
+                                    <div class="project-card glass-bg h-100 d-flex flex-column">
+                                        <img src="https://raw.githubusercontent.com/mh-aminian/data-analytics-portfolio/main/PowerBI/hr-data-analysis-dashboard/image/hr.PNG"
+                                            alt="HR Data Analysis & Dashboard" class="project-image" />
+                                        <div class="project-card-body flex-grow-1">
+                                            <h5 class="project-card-title">HR Data Analysis & Dashboard</h5>
+                                            <p class="project-card-text">
+                                                A comprehensive Power BI project that walks through HR data analysis by
+                                                answering 10 real-world questions and ending with a clean, informative
+                                                HR dashboard. This project covers employee distribution, pay trends,
+                                                leave balances, and more — using rich visuals and advanced DAX
+                                                calculations.
+                                            </p>
+                                        </div>
+                                        <a href="https://github.com/mh-aminian/data-analytics-portfolio/tree/main/PowerBI/hr-data-analysis-dashboard"
+                                            class="project-link mt-auto" target="_blank" aria-label="View Project">
+                                            <i class="fas fa-external-link-alt"></i>
+                                        </a>
+                                    </div>
+                                </div>
+
+                                <!-- Plantco Project Card -->
+                                <div class="col-12 col-md-4 col-lg-4 my-2">
+                                    <div class="project-card glass-bg h-100 d-flex flex-column">
+                                        <img src="https://raw.githubusercontent.com/mh-aminian/data-analytics-portfolio/main/PowerBI/plantco-performance-dashboard/image/plantco-performance-dashboard.PNG"
+                                            alt="Plant Performance Dashboard" class="project-image" />
+                                        <div class="project-card-body flex-grow-1">
+                                            <h5 class="project-card-title">Plant Co. Quantity Performance Dashboard</h5>
+                                            <p class="project-card-text">
+                                                A multi-year, metric-driven Power BI dashboard designed to analyze
+                                                quantity performance, gross profit, and sales across countries,
+                                                products, and time periods. This dashboard provides rich insights into
+                                                performance gaps, segmentation, and year-over-year growth.
+                                            </p>
+                                        </div>
+                                        <a href="https://github.com/mh-aminian/data-analytics-portfolio/tree/main/PowerBI/plantco-performance-dashboard"
+                                            class="project-link mt-auto" target="_blank" aria-label="View Project">
+                                            <i class="fas fa-external-link-alt"></i>
+                                        </a>
+                                    </div>
+                                </div>
+
+                                <!-- Sales Project Card -->
+                                <div class="col-12 col-md-4 col-lg-4 my-2">
+                                    <div class="project-card glass-bg h-100 d-flex flex-column">
+                                        <img src="https://raw.githubusercontent.com/mh-aminian/data-analytics-portfolio/main/PowerBI/sales-product-dashboard/image/sales-product-dashboard1.PNG"
+                                            alt="Sales & Product Performance" class="project-image" />
+                                        <div class="project-card-body flex-grow-1">
+                                            <h5 class="project-card-title">Sales & Product Performance Dashboard</h5>
+                                            <p class="project-card-text">
+                                                An advanced Power BI dashboard built for analyzing the performance of
+                                                chocolate products across different countries. This report combines
+                                                interactive slicers, buttons, dynamic charts, and conditional formatting
+                                                to offer a complete view of sales, shipments, and profitability.
+                                            </p>
+                                        </div>
+                                        <a href="https://github.com/mh-aminian/data-analytics-portfolio/tree/main/PowerBI/sales-product-dashboard"
+                                            class="project-link mt-auto" target="_blank" aria-label="View Project">
+                                            <i class="fas fa-external-link-alt"></i>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Tableau Projects -->
+                        <div class="collapse multi-collapse" id="Tableau">
+                            <div class="row">
+                                <!-- HR Project Card -->
+                                <div class="col-12 col-md-4 col-lg-4 my-4">
+                                    <div class="project-card glass-bg h-100 d-flex flex-column">
+                                        <img src="https://raw.githubusercontent.com/mh-aminian/data-analytics-portfolio/main/Tableau/human-resouce-dashboard/image/hr_dashboard_overview.PNG"
+                                            alt="Human Resource Dashboard" class="project-image" />
+                                        <div class="project-card-body flex-grow-1">
+                                            <h5 class="project-card-title">Human Resource Dashboard</h5>
+                                            <p class="project-card-text">
+                                                A strategic and exploratory HR dashboard built in Tableau, designed to
+                                                provide insights into employee distribution, hiring trends, salary gaps,
+                                                and workforce demographics across multiple dimensions.
+                                            </p>
+                                        </div>
+                                        <a href="https://github.com/mh-aminian/data-analytics-portfolio/tree/main/Tableau/human-resouce-dashboard"
+                                            class="project-link mt-auto" target="_blank" aria-label="View Project">
+                                            <i class="fas fa-external-link-alt"></i>
+                                        </a>
+                                    </div>
+                                </div>
+                                <!-- Sales-Customers Project Card -->
+                                <div class="col-12 col-md-4 col-lg-4 my-4">
+                                    <div class="project-card glass-bg h-100 d-flex flex-column">
+                                        <img src="https://raw.githubusercontent.com/mh-aminian/data-analytics-portfolio/main/Tableau/sales-&-customers-dynamic-dashboard/image/sales-dashboard-preview.PNG"
+                                            alt="Sales & Customer Analysis Dashboards" class="project-image" />
+                                        <div class="project-card-body flex-grow-1">
+                                            <h5 class="project-card-title">Sales & Customer Analysis Dashboards</h5>
+                                            <p class="project-card-text">
+                                                A dual-dashboard Tableau project designed to analyze key business KPIs —
+                                                from sales performance to customer profitability. Built for data-driven
+                                                decision-making through dynamic visual exploration.
+                                            </p>
+                                        </div>
+                                        <a href="https://github.com/mh-aminian/data-analytics-portfolio/tree/main/Tableau/sales-&-customers-dynamic-dashboard"
+                                            class="project-link mt-auto" target="_blank" aria-label="View Project">
+                                            <i class="fas fa-external-link-alt"></i>
+                                        </a>
+                                    </div>
+                                </div>
+                                <!-- House Sales Project Card -->
+                                <div class="col-12 col-md-4 col-lg-4 my-4">
+                                    <div class="project-card glass-bg h-100 d-flex flex-column">
+                                        <img src="https://raw.githubusercontent.com/mh-aminian/data-analytics-portfolio/main/Tableau/king-county-house-sales-dashboard/image/king-county-preview.PNG"
+                                            alt="King County House Sales Dashboard" class="project-image" />
+                                        <div class="project-card-body flex-grow-1">
+                                            <h5 class="project-card-title">King County House Sales Dashboard</h5>
+                                            <p class="project-card-text">
+                                                An interactive Tableau dashboard exploring housing prices, size,
+                                                location, and key structural features across King County, WA. Designed
+                                                for market trend analysis, buyer preferences, and investment planning.
+                                            </p>
+                                        </div>
+                                        <a href="https://github.com/mh-aminian/data-analytics-portfolio/tree/main/Tableau/king-county-house-sales-dashboard"
+                                            class="project-link mt-auto" target="_blank" aria-label="View Project">
+                                            <i class="fas fa-external-link-alt"></i>
+                                        </a>
+                                    </div>
+                                </div>
+                                <!-- Airways  Project Card -->
+                                <div class="col-12 col-md-4 col-lg-4 my-4">
+                                    <div class="project-card glass-bg h-100 d-flex flex-column">
+                                        <img src="https://raw.githubusercontent.com/mh-aminian/data-analytics-portfolio/main/Tableau/british-airways-review-dashboard/image/british-airways-preview.PNG"
+                                            alt="British Airways Review Dashboard" class="project-image" />
+                                        <div class="project-card-body flex-grow-1">
+                                            <h5 class="project-card-title">British Airways Review Dashboard</h5>
+                                            <p class="project-card-text">
+                                                A compact Tableau dashboard visualizing customer reviews, service
+                                                quality, and overall sentiment toward British Airways. Built to quickly
+                                                explore feedback trends and performance perceptions across countries and
+                                                categories.
+                                            </p>
+                                        </div>
+                                        <a href="https://github.com/mh-aminian/data-analytics-portfolio/tree/main/Tableau/british-airways-review-dashboard"
+                                            class="project-link mt-auto" target="_blank" aria-label="View Project">
+                                            <i class="fas fa-external-link-alt"></i>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- DataFoundations - SQL -->
+                        <div class="collapse multi-collapse" id="DataFoundations">
+                            <div class="row">
+                                <!-- Data Warehouse Project Card -->
+                                <div class="col-12 col-md-4 col-lg-4 my-4">
+                                    <div class="project-card glass-bg h-100 d-flex flex-column">
+                                        <img src="assets/image/projects/Data-Warehouse.png" alt="Data Warehouse Project"
+                                            class="project-image" />
+                                        <div class="project-card-body flex-grow-1">
+                                            <h5 class="project-card-title">Data Warehouse Project</h5>
+                                            <p class="project-card-text">
+                                                This project demonstrates a comprehensive data warehousing and analytics
+                                                solution, from building a data warehouse to generating actionable
+                                                insights. Designed as a portfolio project, it highlights industry best
+                                                practices in data engineering and analytics.
+                                            </p>
+                                        </div>
+                                        <a href="https://github.com/mh-aminian/sql_data_warehouse_project/tree/main"
+                                            class="project-link mt-auto" target="_blank" aria-label="View Project">
+                                            <i class="fas fa-external-link-alt"></i>
+                                        </a>
+                                    </div>
+                                </div>
+
+                                <!-- Retail Sales Card -->
+                                <div class="col-12 col-md-4 col-lg-4 my-4">
+                                    <div class="project-card glass-bg h-100 d-flex flex-column">
+                                        <img src="https://raw.githubusercontent.com/mh-aminian/data-analytics-portfolio/main/SQL-Analytics/retail-sales-analytics/images/project-overview.PNG"
+                                            alt="Data Warehouse Project" class="Retail Sales Analytics" />
+                                        <div class="project-card-body flex-grow-1">
+                                            <h5 class="project-card-title">Retail Sales Analytics</h5>
+                                            <p class="project-card-text">
+                                                In the second phase of the Data Warehousing Project, I expanded on the
+                                                existing foundation to perform Exploratory Data Analysis (EDA) and
+                                                extract advanced business insights directly using SQL.
+                                            </p>
+                                        </div>
+                                        <a href="https://github.com/mh-aminian/data-analytics-portfolio/tree/main/SQL-Analytics/retail-sales-analytics"
+                                            class="project-link mt-auto" target="_blank" aria-label="View Project">
+                                            <i class="fas fa-external-link-alt"></i>
+                                        </a>
+                                    </div>
+                                </div>
+
+                                <!-- Incoming Project Card -->
+                                <div class="col-12 col-md-4 col-lg-4 my-4">
+                                    <div class="project-card glass-bg h-100 d-flex flex-column">
+                                        <!-- <img src="" alt="Data Warehouse Project"
+                                            class="project-image" /> -->
+                                        <div class="bg-danger text-white d-flex align-items-center justify-content-center"
+                                            style="height: 180px; border-radius: 10px;">
+                                            <div class="text-center">
+                                                <i class="fas fa-spinner fa-spin" style="font-size: 2.5rem;"></i>
+                                                <div class="mt-2 fw-semibold">Loading...</div>
+                                            </div>
+                                        </div>
+                                        <div class="project-card-body flex-grow-1">
+                                            <h5 class="project-card-title">More Comming Soon 🚀</h5>
+                                            <p class="project-card-text">
+                                                This section is currently under development and will be updated in the
+                                                near future.
+                                            </p>
+                                        </div>
+                                        <a href="#" class="project-link mt-auto" target="_blank"
+                                            aria-label="View Project">
+                                            <i class="fas fa-external-link-alt"></i>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Data Science -->
+                    <div class="collapse multi-collapse show" id="DataScience">
+                        <div class="row">
+                            <!-- Bundling Project Card -->
+                            <div class="col-12 col-md-4 col-lg-4 my-2">
+                                <div class="project-card glass-bg h-100 d-flex flex-column">
+                                    <img src="assets/image/projects/bundling.jpg" alt="Bundling Strategy Analysis"
+                                        class="project-image" />
+                                    <div class="project-card-body flex-grow-1">
+                                        <h5 class="project-card-title">Bundling Strategy Analysis</h5>
+                                        <p class="project-card-text">
+                                            This project analyzes the impact of a bundling strategy on coupon usage
+                                            using logistic regression and categorical profiling techniques. It explores
+                                            how different communication channels and bundling decisions influence user
+                                            behavior, leveraging both statistical tests and predictive modeling.
+                                        </p>
+                                    </div>
+                                    <a href="https://github.com/mh-aminian/data-science-portfolio/tree/main/bundling-strategy-analysis"
+                                        class="project-link mt-auto" target="_blank" aria-label="View Project">
+                                        <i class="fas fa-external-link-alt"></i>
+                                    </a>
+                                </div>
+                            </div>
+
+                            <!-- Hitters Project Card -->
+                            <div class="col-12 col-md-4 col-lg-4 my-2">
+                                <div class="project-card glass-bg h-100 d-flex flex-column">
+                                    <img src="assets/image/projects/hitters.png"
+                                        alt="Predicting Baseball Hitters Salaries" class="project-image" />
+                                    <div class="project-card-body flex-grow-1">
+                                        <h5 class="project-card-title">Predicting Baseball Hitters Salaries</h5>
+                                        <p class="project-card-text">
+                                            This project explores a rich Baseball League dataset to predict player
+                                            salaries using a variety of statistical and machine learning models. The
+                                            workflow is divided into seven notebooks, progressing from initial data
+                                            exploration and preparation through to advanced predictive modeling.
+                                        </p>
+                                    </div>
+                                    <a href="https://github.com/mh-aminian/data-science-portfolio/tree/main/hitters_salary_prediction"
+                                        class="project-link mt-auto" target="_blank" aria-label="View Project">
+                                        <i class="fas fa-external-link-alt"></i>
+                                    </a>
+                                </div>
+                            </div>
+
+                            <!-- kNN Project Card -->
+                            <div class="col-12 col-md-4 col-lg-4 my-2">
+                                <div class="project-card glass-bg h-100 d-flex flex-column">
+                                    <img src="assets/image/projects/knn.png" alt="k-Nearest Neighbors Regression"
+                                        class="project-image" />
+                                    <div class="project-card-body flex-grow-1">
+                                        <h5 class="project-card-title">k-Nearest Neighbors Regression</h5>
+                                        <p class="project-card-text">
+                                            This notebook walks through the complete process of building and evaluating
+                                            a k-Nearest Neighbors regression model using a manually created dataset.
+                                            Each step is accompanied by clear visualizations to deepen understanding of
+                                            data behavior, model predictions, and error dynamics.
+                                        </p>
+                                    </div>
+                                    <a href="https://github.com/mh-aminian/data-science-portfolio/tree/main/knn_regression_project"
+                                        class="project-link mt-auto" target="_blank" aria-label="View Project">
+                                        <i class="fas fa-external-link-alt"></i>
+                                    </a>
+                                </div>
+                            </div>
+
+                            <!-- Gradient Project Card -->
+                            <div class="col-12 col-md-4 col-lg-4 my-2">
+                                <div class="project-card glass-bg h-100 d-flex flex-column">
+                                    <img src="assets/image/projects/GB.jpg" alt="Manual Gradient Descent vs OLS"
+                                        class="project-image" />
+                                    <div class="project-card-body flex-grow-1">
+                                        <h5 class="project-card-title">Manual Gradient Descent vs OLS</h5>
+                                        <p class="project-card-text">
+                                            This project demonstrates core optimization concepts in regression and
+                                            machine learning through manual implementation of gradient-based techniques.
+                                            Two custom-coded examples showcase how boosting and gradient descent work in
+                                            practice, and how they compare to analytical solutions like Ordinary Least
+                                            Squares (OLS).
+                                        </p>
+                                    </div>
+                                    <a href="https://github.com/mh-aminian/data-science-portfolio/tree/main/manual-gradient-optimization"
+                                        class="project-link mt-auto" target="_blank" aria-label="View Project">
+                                        <i class="fas fa-external-link-alt"></i>
+                                    </a>
+                                </div>
+                            </div>
+
+                            <!-- Car Project Card -->
+                            <div class="col-12 col-md-4 col-lg-4 my-2">
+                                <div class="project-card glass-bg h-100 d-flex flex-column">
+                                    <img src="assets/image/projects/car-price.jpg" alt="Used Car Price Prediction"
+                                        class="project-image" />
+                                    <div class="project-card-body flex-grow-1">
+                                        <h5 class="project-card-title">Used Car Price Prediction</h5>
+                                        <p class="project-card-text">
+                                            This project develops a predictive model for estimating used car prices
+                                            using linear regression techniques. The focus is on building a reliable,
+                                            interpretable model and evaluating it using absolute error analysis, not
+                                            just conventional metrics like R² or RMSE.
+                                        </p>
+                                    </div>
+                                    <a href="https://github.com/mh-aminian/data-science-portfolio/tree/main/used-car-price-prediction"
+                                        class="project-link mt-auto" target="_blank" aria-label="View Project">
+                                        <i class="fas fa-external-link-alt"></i>
+                                    </a>
+                                </div>
+                            </div>
+
+                            <!-- Incoming Project Card -->
+                            <div class="col-12 col-md-4 col-lg-4 my-4">
+                                <div class="project-card glass-bg h-100 d-flex flex-column">
+                                    <!-- <img src="" alt="Data Warehouse Project"
+                                            class="project-image" /> -->
+                                    <div class="bg-danger text-white d-flex align-items-center justify-content-center"
+                                        style="height: 180px; border-radius: 10px;">
+                                        <div class="text-center">
+                                            <i class="fas fa-spinner fa-spin" style="font-size: 2.5rem;"></i>
+                                            <div class="mt-2 fw-semibold">Loading...</div>
+                                        </div>
+                                    </div>
+                                    <div class="project-card-body flex-grow-1">
+                                        <h5 class="project-card-title">More Comming Soon 🚀</h5>
+                                        <p class="project-card-text">
+                                            This section is currently under development and will be updated in the
+                                            near future.
+                                        </p>
+                                    </div>
+                                    <a href="#" class="project-link mt-auto" target="_blank" aria-label="View Project">
+                                        <i class="fas fa-external-link-alt"></i>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Research -->
+                    <div class="collapse multi-collapse" id="Research">
+                        <div class="row">
+                            <!-- Incoming Project Card -->
+                            <div class="col-12 col-md-4 col-lg-4 my-4">
+                                <div class="project-card glass-bg h-100 d-flex flex-column">
+                                    <img src="assets/image/projects/loading.jpg" alt="Data Warehouse Project"
+                                        class="project-image" />
+                                    <div class="project-card-body flex-grow-1">
+                                        <h5 class="project-card-title">Enhanced ANN for EDM of Inconel 718</h5>
+                                        <p class="project-card-text">
+                                            Developed a custom artificial neural network optimized pipline for
+                                            performance
+                                            on
+                                            extremely low-data environments (33 samples), applied to electric discharge
+                                            machining of nickel-based superalloys.
+                                            <br>
+                                            <strong>Status:</strong> Journal submission under review.
+                                        </p>
+                                    </div>
+                                    <a href="#" class="project-link mt-auto" target="_blank" aria-label="View Project">
+                                        <i class="fas fa-external-link-alt"></i>
+                                    </a>
+                                </div>
+                            </div>
+
+                            <!-- Incoming Project Card -->
+                            <div class="col-12 col-md-4 col-lg-4 my-4">
+                                <div class="project-card glass-bg h-100 d-flex flex-column">
+                                    <img src="assets/image/projects/loading.jpg" alt="Data Warehouse Project"
+                                        class="project-image" />
+                                    <div class="project-card-body flex-grow-1">
+                                        <h5 class="project-card-title">Feature Importance & Regression on Material
+                                            Hardness
+                                            Data</h5>
+                                        <p class="project-card-text">
+                                            Performed univariate and multivariate regression analysis on material
+                                            hardness
+                                            data to identify and rank critical features (via standard coefficients,
+                                            correlation, and recursive selection).
+                                            Built predictive models and performed sensitivity analysis to quantify the
+                                            effect of each input feature on material hardness.
+                                            <br>
+                                            <strong>Status:</strong> Collaborative research in progress. Code
+                                            availability
+                                            to be determined.D
+                                        </p>
+                                    </div>
+                                    <a href="#" class="project-link mt-auto" target="_blank" aria-label="View Project">
+                                        <i class="fas fa-external-link-alt"></i>
+                                    </a>
+                                </div>
+                            </div>
+
+                            <!-- Incoming Project Card -->
+                            <div class="col-12 col-md-4 col-lg-4 my-4">
+                                <div class="project-card glass-bg h-100 d-flex flex-column">
+                                    <img src="assets/image/projects/loading.jpg" alt="Data Warehouse Project"
+                                        class="project-image" />
+                                    <div class="project-card-body flex-grow-1">
+                                        <h5 class="project-card-title">Cybersecurity Intrusion Detection & Feature
+                                            Optimization</h5>
+                                        <p class="project-card-text">
+                                            Ongoing research on multi-objective feature selection and machine learning
+                                            for intrusion detection systems (IDS) using simulated datasets and advanced
+                                            optimization techniques.
+                                            <br>
+                                            <strong>Status:</strong> Active project. Details confidential.
+                                        </p>
+                                        </p>
+                                    </div>
+                                    <a href="#" class="project-link mt-auto" target="_blank" aria-label="View Project">
+                                        <i class="fas fa-external-link-alt"></i>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- AI & Models -->
+                    <div class="collapse multi-collapse" id="AIModels">
+                        <!-- Incoming Project Card -->
+                        <div class="col-12 col-md-4 col-lg-4 my-4">
+                            <div class="project-card glass-bg h-100 d-flex flex-column">
+                                <!-- <img src="" alt="Data Warehouse Project"
+                                            class="project-image" /> -->
+                                <div class="bg-danger text-white d-flex align-items-center justify-content-center"
+                                    style="height: 180px; border-radius: 10px;">
+                                    <div class="text-center">
+                                        <i class="fas fa-spinner fa-spin" style="font-size: 2.5rem;"></i>
+                                        <div class="mt-2 fw-semibold">Loading...</div>
+                                    </div>
+                                </div>
+                                <div class="project-card-body flex-grow-1">
+                                    <h5 class="project-card-title">Launching Soon 🚀</h5>
+                                    <p class="project-card-text">
+                                        This section is currently under development and will be updated in the
+                                        near future.
+                                    </p>
+                                </div>
+                                <a href="#" class="project-link mt-auto" target="_blank" aria-label="View Project">
+                                    <i class="fas fa-external-link-alt"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ========================= Footer ========================= -->
+    <footer class="footer" id="footer">
+        <div class="container footer-text mx-auto px-6 py-2">
+            <p style="text-align: center; margin-bottom: 0;">
+                &copy;
+                <script>document.write(new Date().getFullYear())</script>
+                Mohammad Hossein Aminian. All Rights Reserved.
+            </p>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
+    <script src="assets/js/jquery-3.6.0.min.js"></script>
+    <script src="assets/js/bootstrap.bundle.min.js"></script>
+    <script src="assets/js/all.js"></script>
+    <script src="assets/js/custom.js"></script>
+</body>
+
+</html>
